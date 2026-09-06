@@ -1,16 +1,30 @@
 aid: abkbiomedical
-name: Abkbiomedical
-description: 'Abkbiomedical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: ABK Biomedical
+description: ABK Biomedical Inc. is a Halifax, Nova Scotia medical device company founded in 2012 as a spin-out
+  of Dalhousie University, developing and manufacturing imageable embolic microspheres for interventional oncology.
+  Its lead product, Eye90 microspheres, is a yttrium-90 radioembolization device built on a proprietary imageable
+  glass composition that is directly visible under fluoroscopy, X-ray and CT during and after the procedure, and
+  it was granted FDA Breakthrough Device Designation for unresectable hepatocellular carcinoma and studied in the
+  ROUTE90 pivotal trial. Its Easi-Vue embolic microspheres received FDA 510(k) clearance for embolization of
+  hypervascular tumors and arteriovenous malformations. Devices are produced in the company's own cleanroom
+  manufacturing facility in Halifax, with a second office in Ladera Ranch, California. ABK Biomedical is a
+  regulated medical device manufacturer rather than a software vendor, and as of this profile it publishes no
+  developer program, API documentation, SDK, or machine-readable API contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/abkbiomedical/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-06'
 modified: '2026-09-06'
 tags:
+- Medical Devices
+- Interventional Oncology
+- Radioembolization
+- Medical Imaging
+- Oncology
+- Healthcare
+- Manufacturing
+- Canada
 - Company
 apis: []
 maintainers:
@@ -20,4 +34,40 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://abkbiomedical.com/
+- type: LinkedIn
+  url: https://ca.linkedin.com/company/abk-biomedical-inc-
+- type: SecondaryMarket
   url: https://equityzen.com/company/abkbiomedical
+- type: DomainSecurity
+  url: security/abkbiomedical-domain-security.yml
+x-tier: profiled
+x-tier-reason: 'enrichment pass 2026-09-06: full STEP 0b contract discovery run against every known host,
+  no public API surface found'
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: 'ABK Biomedical manufactures implantable radioembolization and embolic microspheres (Eye90, Easi-Vue)
+    in its own Halifax cleanroom rather than software: no api., developer., dev., portal., app. or data. host
+    exists in DNS, there is no GitHub organization and no package under this name on npm or PyPI, and
+    abkbiomedical.com is a SiteGround-hosted marketing site whose every path — /robots.txt included — answers
+    HTTP 202 with an sg-captcha interstitial rather than any document.'
+  evidence:
+  - url: https://abkbiomedical.com/.well-known/api-catalog
+    status: 202
+  - url: https://abkbiomedical.com/openapi.json
+    status: 202
+  - url: https://api.github.com/orgs/abkbiomedical
+    status: 404
+  - url: https://pypi.org/pypi/abkbiomedical/json
+    status: 404
+  - url: https://registry.npmjs.org/-/v1/search?text=abkbiomedical
+    status: 200
+  - url: https://equityzen.com/company/abkbiomedical
+    status: 200
+  checked: '2026-09-06'

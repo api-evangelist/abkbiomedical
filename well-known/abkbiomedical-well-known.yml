@@ -1,0 +1,73 @@
+generated: '2026-09-06'
+method: probed
+source: 'direct HTTPS probes of the named /.well-known/ path list on every host this record knows'
+note: >-
+  No /.well-known document is served. Every path on both abkbiomedical.com and www.abkbiomedical.com
+  answered HTTP 202 with a SiteGround anti-bot interstitial (response header "sg-captcha: challenge",
+  a 179-byte HTML meta-refresh to /.well-known/sgcaptcha/) rather than a document — the host answers
+  every path that way, including / and /robots.txt, so this is an edge policy applied to our crawler,
+  not evidence that a document exists behind it. No WellKnown or SecurityTxt pointer is emitted,
+  because nothing was served. There is no api., developer., dev., portal., app. or data. host in DNS
+  (all NXDOMAIN); docs.abkbiomedical.com is a CNAME to ghs.google.com (Google Sites) that refuses the
+  TLS handshake from this prober.
+hosts:
+- host: abkbiomedical.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+- host: www.abkbiomedical.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+- host: docs.abkbiomedical.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null

@@ -1,4 +1,4 @@
-# Abkbiomedical
+# ABK Biomedical
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,7 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Abkbiomedical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/abkbiomedical
+ABK Biomedical Inc. is a Halifax, Nova Scotia medical device company founded in 2012 as a spin-out of Dalhousie University, developing and manufacturing imageable embolic microspheres for interventional oncology — Eye90 microspheres (yttrium-90 radioembolization, FDA Breakthrough Device Designation for unresectable HCC) and Easi-Vue embolic microspheres (FDA 510(k) cleared). It is a regulated device manufacturer, not a software vendor, and publishes no developer program, API documentation, SDK or machine-readable API contract. See `x-coverage` in `apis.yml` for the probes behind that finding.
+
+- Website: https://abkbiomedical.com/
+- Secondary-market listing: https://equityzen.com/company/abkbiomedical
